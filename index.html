@@ -4,38 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyal's Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-5">
         <h1>Welcome to Priyal's Portfolio</h1>
     </header>
-    <section id="about">
+    <section id="about" class="container my-5">
         <h2>About Me</h2>
-        <p>Hi, I'm Priyal. I'm a skilled professional with experience in ...</p>
+        <p>Hi, I'm Priyal. I hold a Master of Science in Marketing from Suffolk University and a Post Graduate Diploma in Management from ICFAI Business School. With extensive experience in digital marketing, brand strategy, and consumer insights, I have successfully led projects at Procter & Gamble and Reliance Industries, driving significant business growth through data-driven strategies and innovative campaigns.</p>
     </section>
-    <section id="projects">
+    <section id="projects" class="container my-5">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project...</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Pantene Sustainable Branding Campaign</h3>
+                <img src="path/to/pantene.jpg" alt="Pantene Campaign" class="img-fluid">
+                <p>Led a sustainable branding campaign that resulted in a 20% expansion in the consumer base among eco-conscious segments.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Pampers #LoveSleepPlay Campaign</h3>
+                <img src="path/to/pampers.jpg" alt="Pampers Campaign" class="img-fluid">
+                <p>Developed and executed the "Pampers #LoveSleepPlay" campaign, significantly boosting online engagement and consumer connectivity, leading to a 30% conversion boost.</p>
+            </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="container my-5">
         <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
+        <ul class="list-group">
+            <li class="list-group-item">Marketing & Advertising Tools: Google Ads, Facebook Ads Manager, LinkedIn Campaign Manager, Marketo, Mailchimp, HubSpot, Bing Ads, SEO/SEM, WordPress, Wix.</li>
+            <li class="list-group-item">Business & Social Media Management: Salesforce, HubSpot, Sprinklr, Hootsuite, Sprout Social.</li>
+            <li class="list-group-item">Analytical & Technical Skills: Google Analytics, Adobe Analytics, Tableau, Power BI, Advanced Excel, SQL, Data Visualization, Adobe Creative Suite, Canva, Figma, A/B Testing.</li>
+            <li class="list-group-item">Project Management & Office Tools: Jira, Confluence, Asana, Trello, Slack, MS Office, Google Suite.</li>
         </ul>
     </section>
-    <section id="contact">
+    <section id="contact" class="container my-5">
         <h2>Contact</h2>
-        <form action="mailto:youremail@example.com">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+        <form action="mailto:PriyalB.Kalathiya@gmail.com">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
         </form>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
